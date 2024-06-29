@@ -1,0 +1,51 @@
+
+body{
+    text-align: center;
+    background-color: rgba(28, 249, 246, 0.475);
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid black;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-container .btn{
+    margin: 2.5rem;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+
+.flash {
+    animation: flashAnimation 1s;
+}
+
+@keyframes flashAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.userflash {
+    animation: userflashAnimation 1s;
+}
+
+@keyframes userflashAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
